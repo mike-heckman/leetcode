@@ -11,94 +11,71 @@ graph LR
     A --> F{"Is it an optimization or counting problem<br/>with overlapping subproblems?"};
 
     B --> B1{Contiguous subarray/substring?};
-    B1 --> B1a[Sliding Window];
-    click B1a "sliding_window.md" "Sliding Window Pattern"
+    B1 --> B1a[<a href="sliding_window.md">Sliding Window</a>];
     
     B --> B2{Process from ends inward?};
-    B2 --> B2a[Two Pointers];
-    click B2a "two_pointers.md" "Two Pointers Pattern"
+    B2 --> B2a[<a href="two_pointers.md">Two Pointers</a>];
     
     B --> B3{Locally optimal choices?};
-    B3 --> B3a[Greedy];
-    click B3a "greedy.md" "Greedy Pattern"
+    B3 --> B3a[<a href="greedy.md">Greedy</a>];
     
     B --> B4{Running totals/sums?};
-    B4 --> B4a[Prefix Sum];
-    click B4a "prefix_sum.md" "Prefix Sum Pattern"
+    B4 --> B4a[<a href="prefix_sum.md">Prefix Sum</a>];
     
     B --> B5{Rearranging or calculating a new array?};
-    B5 --> B5a[Array Manipulation];
-    click B5a "array_manipulation.md" "Array Manipulation Pattern"
+    B5 --> B5a[<a href="array_manipulation.md">Array Manipulation</a>];
     
     B --> B6{Building or modifying a string?};
-    B6 --> B6a[String Manipulation];
-    click B6a "string_manipulation.md" "String Manipulation Pattern"
+    B6 --> B6a[<a href="string_manipulation.md">String Manipulation</a>];
 
     C --> C1{Pointers at different speeds?};
-    C1 --> C1a[Fast & Slow Pointers];
-    click C1a "fast_and_slow_pointer.md" "Fast & Slow Pointer Pattern"
+    C1 --> C1a[<a href="fast_and_slow_pointer.md">Fast & Slow Pointers</a>];
     
     C --> C2{Reversing the list?};
-    C2 --> C2a[LinkedList Reversal];
-    click C2a "linked_list.md" "LinkedList Pattern"
+    C2 --> C2a[<a href="linked_list.md">LinkedList Reversal</a>];
 
     D --> D1{Is it a Tree?};
     D1 -- Yes --> D2{Explore level-by-level?};
-    D2 -- Yes --> D2a[Tree BFS];
-    click D2a "tree_bfs.md" "Tree BFS Pattern"
+    D2 -- Yes --> D2a[<a href="tree_bfs.md">Tree BFS</a>];
     
     D2 -- No --> D3{Explore one branch fully?};
-    D3 -- Yes --> D3a[Tree DFS];
-    click D3a "tree_dfs.md" "Tree DFS Pattern"
+    D3 -- Yes --> D3a[<a href="tree_dfs.md">Tree DFS</a>];
     
     D3 -- No --> D4{Is it a Binary Search Tree?};
-    D4 -- Yes --> D4a[Tree BST];
-    click D4a "tree_bst.md" "Tree BST Pattern"
+    D4 -- Yes --> D4a[<a href="tree_bst.md">Tree BST</a>];
     
     D1 -- No, it's a Graph --> D5{Find connected components/traverse?};
-    D5 -- Yes --> D5a(Graph DFS);
-    click D5a "graph_dfs.md" "Graph DFS Pattern"
-    D5 -- Yes --> D5b(Union-Find);
-    click D5b "union_find.md" "Union-Find Pattern"
+    D5 -- Yes --> D5a(<a href="graph_dfs.md">Graph DFS</a>);
+    D5 -- Yes --> D5b(<a href="union_find.md">Union-Find</a>);
     
     D5 -- No --> D6{Shortest path in unweighted graph?};
-    D6 -- Yes --> D6a[Graph BFS];
-    click D6a "tree_bfs.md" "Tree BFS Pattern"
+    D6 -- Yes --> D6a[<a href="tree_bfs.md">Graph BFS</a>];
     
     D5 -- No --> D7{Find all possible paths/combinations?};
-    D7 -- Yes --> D7a[Backtracking];
-    click D7a "backtracking.md" "Backtracking Pattern"
+    D7 -- Yes --> D7a[<a href="backtracking.md">Backtracking</a>];
 
     E --> E1{Count frequencies / fast lookups?};
-    E1 --> E1a[HashMap / HashSet];
-    click E1a "hash_map_set.md" "HashMap/Set Pattern"
+    E1 --> E1a[<a href="hash_map_set.md">HashMap / HashSet</a>];
     
     E --> E2{"Last-In, First-Out (LIFO)?"};
-    E2 --> E2a[Stack];
-    click E2a "stack.md" "Stack Pattern"
+    E2 --> E2a[<a href="stack.md">Stack</a>];
     
     E --> E3{"First-In, First-Out (FIFO)?"};
-    E3 --> E3a[Queue];
-    click E3a "queue.md" "Queue Pattern"
+    E3 --> E3a[<a href="queue.md">Queue</a>];
     
     E --> E4{Need to find Top 'K' elements?};
-    E4 --> E4a[Heap / Priority Queue];
-    click E4a "heap.md" "Heap Pattern"
+    E4 --> E4a[<a href="heap.md">Heap / Priority Queue</a>];
     
     E --> E5{Need to find an element in a sorted collection?};
-    E5 --> E5a[Binary Search];
-    click E5a "binary_search.md" "Binary Search Pattern"
+    E5 --> E5a[<a href="binary_search.md">Binary Search</a>];
     
     E --> E6{Need to work with prefixes?};
-    E6 --> E6a[Trie];
-    click E6a "trie.md" "Trie Pattern"
+    E6 --> E6a[<a href="trie.md">Trie</a>];
     
     E --> E7{Need to work with individual bits?};
-    E7 --> E7a[Bit Manipulation];
-    click E7a "bit_manipulation.md" "Bit Manipulation Pattern"
+    E7 --> E7a[<a href="bit_manipulation.md">Bit Manipulation</a>];
 
-    F --> Fa[Dynamic Programming];
-    click Fa "dynamic_programming.md" "Dynamic Programming Pattern"
+    F --> Fa[<a href="dynamic_programming.md">Dynamic Programming</a>];
 ```
 
 
